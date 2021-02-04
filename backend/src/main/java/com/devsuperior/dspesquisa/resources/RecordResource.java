@@ -31,8 +31,6 @@ public class RecordResource {
 		return ResponseEntity.ok().body(newDTO);
 		
 	}
-	
-
 	@GetMapping
 	public ResponseEntity<Page<RecordDTO>> findAll(
 			@RequestParam(value = "min", defaultValue = "") String min,
